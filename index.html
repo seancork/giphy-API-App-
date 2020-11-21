@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>Giphy API | Sean</title>
+    <!-- get from cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+
+<div class="flex flex-col h-screen justify-between">
+<header class="bg-blue-300 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">      
+✨
+      <span class="ml-3 text-xl">Giphy API App</span>
+    </a>
+    <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center">
+   
+    </nav>
+    <button id="ramdom-btn" class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">random Gif 🤞
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<section class="text-gray-700 body-font">
+  <div class="container px-5 py-2 mx-auto">
+    <div class="flex flex-col">
+ 
+      <div class="container px-5 py-10 mx-auto"></div>
+          
+          <div class="bg-white shadow p-4 flex">
+            <span class="w-auto flex justify-end items-center text-gray-500 p-2">
+                <i class="material-icons text-3xl">search</i>
+            </span>
+            <input class="w-full rounded p-2" id="searchInput" type="text" placeholder="Search for a gif 🤪">
+            <button id="search-btn"  class="bg-red-400 hover:bg-red-300 rounded text-white p-2 pl-4 pr-4">
+                    <p class="font-semibold text-xs">Search 🔎</p>
+            </button>
+        </div>
+    </div>
+    <div class="flex flex-wrap px-5 py-10 inline-block align-middle"  id="trending-content">
+     
+    </div>
+  </div>
+</section>
+
+<footer class="text-gray-700 body-font">
+
+  <div class="bg-blue-300">
+    <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        ✨
+        <span class="ml-3 text-xl">Sean O' Neill</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
+        <a href="https://seanoneill.me" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">seanoneill.me</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+
+      </span>
+    </div>
+  </div>
+</footer>
+</div>
+
+</body>
+</html>
