@@ -10,7 +10,7 @@ const limit = "40";
 
 function searchDataContent() {
         $('#trending-content').html("");
-        var searchInput = $("#search-text").val();
+        var searchInput = $("#searchInput").val();
         if(searchInput === "") {
             alert("Enter a value");
         } else {
