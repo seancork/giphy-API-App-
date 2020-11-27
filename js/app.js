@@ -5,7 +5,7 @@ $(document).ready(function(){
     trendingFromAPI();
 });
 
-const apikey = "lGCVXIjnlS5aLwupl2Sjv005dNle3svM";
+const apikey = "InsertYouAPIKey";
 const limit = "40";
 
 function searchDataContent() {
