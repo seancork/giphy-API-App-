@@ -9,11 +9,20 @@ const apikey = "lGCVXIjnlS5aLwupl2Sjv005dNle3svM";
 const limit = "40";
 
 function searchDataContent() {
-        $('#trending-content').html("");
+    
         var searchInput = $("#searchInput").val();
         if(searchInput === "") {
-            alert("Enter a value");
+           
+             var $div2 = $("#search-error-message");
+                if ($div2.is(":visible")) { return; }
+                     $div2.show();
+                setTimeout(function() {
+                  $div2.hide();
+                    }, 7000);
+
         } else {
+             $('#trending-content').html("");
+            $('#search-error-message').hide(); 
             var xhr = $.get("http://api.giphy.com/v1/gifs/search?q='" + searchInput + "'&api_key="+apikey+"&"+limit+"");
             
                 xhr.done(function(response) { 
@@ -29,7 +38,7 @@ function searchDataContent() {
 
 function ramdomAPIContent() {
         $('#trending-content').html("");
-
+        $('#search-error-message').hide(); 
             var xhr = $.get("https://api.giphy.com/v1/gifs/random?api_key="+apikey+"&limit="+limit+"");
             
                 xhr.done(function(response) { 
